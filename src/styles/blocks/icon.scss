@@ -12,24 +12,24 @@
 
   @include hover(transform, scale(1.2));
 
-  @include onTablet {
+  @include on-tablet {
     height: 32px;
     width: 32px;
   }
 
   &--phone {
-    background-image: url('/src/images/Phone-number.png');
+    background-image: url('../images/Phone-number.png');
   }
 
   &--menu {
-    background-image: url('/src/images/Icon-Burger-menu(1).png');
+    background-image: url('../images/Icon-Burger-menu(1).png');
 
     &:hover {
-      background-image: url('/src/images/Icon-Burger-menu-hover.png');
+      background-image: url('../images/Icon-Burger-menu-hover.png');
     }
   }
 
   &--close {
-    background-image: url('/src/images/icon-close.png');
+    background-image: url('../images/icon-close.png');
   }
 }

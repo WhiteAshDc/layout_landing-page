@@ -1,7 +1,6 @@
 // Modern Sass entry point: use @use to load each block module.
 @use './utils/variables';
 @use './utils/mixins';
-
 @use 'blocks/header';
 @use 'blocks/icon';
 @use 'blocks/menu';
