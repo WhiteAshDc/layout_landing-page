@@ -1,3 +1,18 @@
-body {
-  margin: 0;
-}
+// Modern Sass entry point: use @use to load each block module.
+@use './utils/variables';
+@use './utils/mixins';
+
+@use 'blocks/header';
+@use 'blocks/icon';
+@use 'blocks/menu';
+@use 'blocks/nav';
+@use 'blocks/page';
+@use 'blocks/top-bar';
+@use 'blocks/section-title';
+@use 'blocks/main.scss';
+@use 'blocks/products';
+@use 'blocks/recommended';
+@use 'blocks/how-to-buy';
+@use 'blocks/categories';
+@use 'blocks/contacts';
+@use 'blocks/footer';
