@@ -15,14 +15,14 @@
   background-size: cover;
 
   &--phone {
-    background-image: url('/src/images/header/Icon-Phone-call.svg');
+    background-image: url('../images/header/Icon-Phone-call.svg');
   }
 
   &--menu {
-    background-image: url('/src/images/header/Icon-Burger-menu.svg');
+    background-image: url('../images/header/Icon-Burger-menu.svg');
   }
 
   &--close {
-    background-image: url('/src/images/header/headerMenuClose.svg');
+    background-image: url('../images/header/headerMenuClose.svg');
   }
 }
