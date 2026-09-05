@@ -1,0 +1,28 @@
+@use '../utils/mixins' as *;
+
+.icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+
+  @include on-tablet {
+    width: 32px;
+    height: 32px;
+  }
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &--phone {
+    background-image: url('/src/images/header/Icon-Phone-call.svg');
+  }
+
+  &--menu {
+    background-image: url('/src/images/header/Icon-Burger-menu.svg');
+  }
+
+  &--close {
+    background-image: url('/src/images/header/headerMenuClose.svg');
+  }
+}

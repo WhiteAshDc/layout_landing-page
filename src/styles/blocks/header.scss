@@ -1,0 +1,71 @@
+@use '../utils/mixins' as *;
+
+.header {
+  background-image: linear-gradient(
+      180deg,
+      rgb(15 18 24 / 0.18) 0%,
+      rgb(15 18 24 / 0.32) 45%,
+      rgb(15 18 24 / 0.48) 100%
+    ),
+    url('/src/images/header/headerBg.avif');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  height: 100vh;
+  padding-top: 25px;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 24px;
+
+    @include on-tablet {
+      gap: 55px;
+    }
+  }
+
+  &__logo {
+    width: 64px;
+    height: 46px;
+
+    @include on-tablet {
+      width: 87px;
+      height: 65px;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+    color: #fff;
+    margin-top: 65%;
+
+    @include on-tablet {
+      font-size: 64px;
+      line-height: 64px;
+      margin-top: 45%;
+    }
+
+    @include on-desktop {
+      margin-top: 10%;
+      font-size: 80px;
+      line-height: 80px;
+      letter-spacing: -1.5px;
+    }
+  }
+}

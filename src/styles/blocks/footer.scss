@@ -1,0 +1,13 @@
+@use '../utils/mixins' as *;
+
+.footer {
+  height: 180px;
+
+  @include on-tablet {
+    height: 359px;
+  }
+
+  background-image: url('/src/images/footer/footer.png');
+  background-position: center;
+  background-size: cover;
+}
