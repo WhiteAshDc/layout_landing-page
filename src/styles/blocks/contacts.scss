@@ -71,9 +71,15 @@
 
     border: none;
     background-color: rgba(248, 248, 250, 1);
+    transition: background-color 0.3s ease;
+
+    &:hover::placeholder {
+      color: rgba(22, 22, 22, 1);
+    }
 
     &:focus {
       outline: none;
+      border: 1px solid rgba(22, 22, 22, 1);
     }
   }
 
@@ -88,12 +94,22 @@
     display: block;
     width: 100%;
     padding: 15px 64px;
+    border: none;
 
     font-weight: 700;
     font-size: 16px;
     line-height: 27px;
     color: rgba(255, 255, 255, 1);
-    background-color: rgba(174, 28, 35, 1);
+    background-color: rgba(209, 45, 53, 1);
     outline: none;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: rgba(174, 28, 35, 1);
+    }
+
+    &:active {
+      background-color: rgba(235, 52, 61, 1);
+    }
   }
 }

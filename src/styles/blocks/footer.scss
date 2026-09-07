@@ -8,6 +8,12 @@
   }
 
   background-image: url('../images/footer/footer.png');
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @include on-desktop {
+    background-position: center;
+    background-size: 100% 100%;
+  }
 }

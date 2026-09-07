@@ -15,11 +15,61 @@
   height: 100vh;
   padding-top: 25px;
 
+  @include on-desktop {
+    padding-top: 50px;
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;
     text-align: center;
     height: 100vh;
+  }
+
+  &__list {
+    position: absolute;
+    right: calc(100% + 16px);
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: max-content;
+    text-align: end;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -16px;
+      width: 16px;
+      height: 100%;
+    }
+  }
+
+  &__call {
+    position: relative;
+  }
+
+  &__call:hover &__list,
+  &__call:focus-within &__list {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  &__colt {
+    font-weight: 700;
+    font-style: bold;
+    font-size: 16px;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
   }
 
   &__top {

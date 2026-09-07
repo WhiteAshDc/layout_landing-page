@@ -46,10 +46,23 @@
               />
             </a>
             <div class="header__icons">
-              <a
-                href="tel:+380673471471"
-                class="icon icon--phone"
-              ></a>
+              <div class="header__call">
+                <a
+                  href="tel:+380673471471"
+                  class="icon icon--phone icon--call"
+                  aria-label="Show phone numbers"
+                ></a>
+                <div class="header__list">
+                  <div class="header__met">
+                    <p class="header__name header__colt">The Met Fifth Avenue</p>
+                    <a href="tel:+12125357710" class="header__clink header__colt">+1 212-535-7710</a>
+                  </div>
+                  <div class="header__clo">
+                    <p class="header__name header__colt">The Met Cloisters</p>
+                    <a href="tel:+12129233700" class="header__clink header__colt">+1 212-923-3700</a>
+                  </div>
+                </div>
+              </div>
               <a
                 href="#menu"
                 class="icon icon--menu"
@@ -322,18 +335,23 @@
                   <p class="contacts__phone">Phone</p>
                   <a href="tel:+12125357710" class="contacts__tel">+1 212-535-7710</a>
                   <p class="contacts__heading">Address</p>
-                  <p class="contacts__text">1000 Fifth AvenueNew <br> York, NY 10028</p>
+                  <a href="https://share.google/TLNsEjLg37fCW9EVp"
+                    target="_blank" class="contacts__text">1000 Fifth AvenueNew <br> York, NY 10028
+                  </a>
                 </div>
                 <div class="contacts__fifth contacts__item">
                   <h3 class="contacts__heading">The Met Cloisters</h3>
                   <p class="contacts__phone">Phone</p>
                   <a href="tel:+12129233700" class="contacts__tel">+1 212-923-3700</a>
                   <p class="contacts__heading">Address</p>
-                  <p class="contacts__text">99 Margaret Corbin Drive <br> Fort Tryon Park <br> New York, NY 10040</p>
+                  <a href="https://maps.app.goo.gl/H7v6ccfFR9qozwmy6"
+                    target="_blank" class="contacts__text">99 Margaret Corbin Drive <br> Fort Tryon Park <br> New York, NY 10040
+                  </a>
                 </div>
               </div>
               <form action="maxpusto533@gmail.com"
-                method="post" class="contacts__form">
+                method="post" class="contacts__form"
+                onsubmit="this.reset(); return false;">
                 <label for="name">
                   <input id="name"
                     name="name" type="text"
