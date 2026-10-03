@@ -58,9 +58,14 @@
 
   &__call:hover &__list,
   &__call:focus-within &__list {
+    display: none;
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+
+    @include on-desktop {
+      display: block;
+    }
   }
 
   &__colt {
