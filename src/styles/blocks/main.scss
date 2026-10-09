@@ -1,6 +1,10 @@
 @use '../utils/mixins' as *;
 
 .main {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+
   &__content {
     display: grid;
     row-gap: 100px;
