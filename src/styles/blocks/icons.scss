@@ -27,6 +27,7 @@
 
   &--menu {
     background-image: url('../images/header/Icon-Burger-menu.svg');
+    -webkit-tap-highlight-color: transparent;
   }
 
   &--close {
