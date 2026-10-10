@@ -15,11 +15,17 @@
   background-position: center;
   background-size: cover;
 
-  height: 100vh;
+  height: 568px;
+  width: 100%;
   padding-top: 25px;
+
+  @include on-tablet {
+    height: 768px;
+  }
 
   @include on-desktop {
     padding-top: 50px;
+    height: 840px;
   }
 
   &__wrapper {
@@ -112,16 +118,16 @@
     line-height: 100%;
     letter-spacing: -1.5px;
     color: #fff;
-    margin-top: 26vh;
+    margin-top: 19vh;
 
     @include on-tablet {
       font-size: 64px;
       line-height: 64px;
-      margin-top: 27vh;
+      margin-top: 21vh;
     }
 
     @include on-desktop {
-      margin-top: 10vh;
+      margin-top: 11vh;
       font-size: 80px;
       line-height: 80px;
       letter-spacing: -1.5px;

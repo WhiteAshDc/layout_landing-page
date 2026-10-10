@@ -12,6 +12,12 @@
   }
 }
 
+@mixin flatscreen {
+  @media (min-width: $flatscreen-min-widt) {
+    @content;
+  }
+}
+
 @mixin content-padding-inline {
   padding-inline: 20px;
 
